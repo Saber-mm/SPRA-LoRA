@@ -30,7 +30,7 @@ SPRA-LoRA is a parameter-efficient federated fine-tuning framework for Large Lan
 
 ### Subdirectory Explanations
 * **[GLUE](GLUE/)**: The implementation codes for the GLUE benchmark are located in the GLUE subfolder.
-* **[CommonSense](Common-Sense/)**: The implementation codes for the CommonsenseQA dataset are located in the Common Sense subfolder.
+* **[CommonSense](CommonSense/)**: The implementation codes for the CommonsenseQA dataset are located in the Common Sense subfolder.
 
 
 ## 📚 Citation
