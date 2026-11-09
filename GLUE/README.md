@@ -65,20 +65,20 @@ finished are skipped.
 
 ```bash
 # written to plots/glue/
-python plot_scripts/plot_eval_curves.py --clients 40 60 80 --alphas 0.8
-python plot_scripts/plot_bar_avg_across_datasets.py --clients 40
-python plot_scripts/plot_bar_avg_across_clients.py
+python SPRA-LoRA/plots/GLUE_plot_scripts/plot_eval_curves.py --clients 40 60 80 --alphas 0.8
+python SPRA-LoRA/plots/GLUE_plot_scripts/plot_bar_avg_across_datasets.py --clients 40
+python SPRA-LoRA/plots/GLUE_plot_scripts/plot_bar_avg_across_clients.py
 ```
 
 Result tables (mean ± standard error over seeds; add `--latex` or `--markdown`,
 `--last` for last-round instead of best-round accuracy):
 
 ```bash
-python plot_scripts/summarize.py --dir runs/glue --finished-only --n 40 --alpha 0.8
+python SPRA-LoRA/plots/GLUE_plot_scripts/summarize.py --dir runs/glue --finished-only --n 40 --alpha 0.8
 ```
 
 Method names, colors and display order for all plots are in
-`plot_scripts/plot_utils.py`.
+`SPRA-LoRA/plots/GLUE_plot_scripts/plot_utils.py`.
 
 ## Files
 
@@ -86,5 +86,5 @@ Method names, colors and display order for all plots are in
 main_LLM_hetrank.py        HetLoRA-family, FlexLoRA, FSLoRA
 main_LLM_hetrank_stack.py  FFA, FLoRA, SPRA-LoRA; --baseline_eval
 dirichlet_data.py          non-IID client split
-plot_scripts/              accuracy curves, bar charts, result tables (summarize.py)
+SPRA-LoRA/plots/GLUE_plot_scripts/              accuracy curves, bar charts, result tables (summarize.py)
 ```
