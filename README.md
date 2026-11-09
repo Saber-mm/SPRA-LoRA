@@ -19,9 +19,10 @@ SPRA-LoRA is a parameter-efficient federated fine-tuning framework for Large Lan
 
 ```text
 .
-├── GLUE/                              # Implementation codes and files for the GLUE benchmark
 ├── Common Sense/                      # Implementation codes and files for the Common Sense dataset
 ├── Figures/                           # Figures and visual assets for documentation
+├── GLUE/                              # Implementation codes and files for the GLUE benchmark
+├── plots/                             # Codes used for plotting the figures in the paper
 ├── Commonsense_requirements.text      # Required Python packages for the Common Sense implementation
 ├── GLUE_requirements.text             # Required Python packages for the GLUE implementation
 └── README.md                          # Repository documentation
