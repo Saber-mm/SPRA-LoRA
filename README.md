@@ -11,7 +11,7 @@ SPRA-LoRA is a parameter-efficient federated fine-tuning framework for Large Lan
   <img src="Figures/spralora.png" alt="SPRA-LoRA Overview" width="800"/>
 </p>
 
-> *Figure 1: High-level overview of the SPRA-LoRA architecture, depicting stochastic projection resampling and rank-aware learning rate adaptation across federated clients.*
+> *Figure 1: High-level overview of the SPRA-LoRA architecture, depicting stochastic projection resampling requiring rank-aware learning rates across clients.*
 
 ---
 
@@ -19,26 +19,9 @@ SPRA-LoRA is a parameter-efficient federated fine-tuning framework for Large Lan
 
 ```text
 .
-├── GLUE/          # Implementation, scripts, and evaluation for GLUE benchmark datasets
-├── Common Sense/  # Implementation, scripts, and evaluation for Common Sense reasoning datasets
-├── Figures/        # Figures and visual assets for documentation
-├── Figures/        # Figures and visual assets for documentation
-├── Commonsense_requirements.text        # Required python pacakges for the Commonsense implementation codes
-├── GLUE_requirements.text        # Required python pacakges for the GLUE implementation codes
-└── README.md      # Repository documentation
-
---- 
-## 📁 Citation
-If you find this work or repository useful in your research, please cite our paper:
-
-```bibtex
-@inproceedings{
-spralora,
-title={Stochastic Projections and Rank-Aware Learning Rates for Federated LoRA},
-author={Saber Malekmohammadi and Kevin Kuo and Virginia Smith and Golnoosh Farnadi},
-booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
-year={2026},
-url={https://openreview.net/forum?id=uPdmJxDBM2}
-}
-```
-
+├── GLUE/                              # Implementation codes and files for the GLUE benchmark
+├── Common Sense/                      # Implementation codes and files for the Common Sense dataset
+├── Figures/                           # Figures and visual assets for documentation
+├── Commonsense_requirements.text      # Required Python packages for the Common Sense implementation
+├── GLUE_requirements.text             # Required Python packages for the GLUE implementation
+└── README.md                          # Repository documentation
