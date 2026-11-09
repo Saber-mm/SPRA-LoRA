@@ -28,7 +28,7 @@ Python 3.10, CUDA 12.1.
 ```bash
 conda create -n glue_lora python=3.10 -y
 conda activate glue_lora
-pip install -r requirements.txt
+pip install -r SPRA-LoRA/GLUE_requirements.txt
 ```
 
 
