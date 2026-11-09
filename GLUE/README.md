@@ -9,7 +9,7 @@ data is split non-IID with a Dirichlet distribution.
 | Script | `--alg` |
 |---|---|
 | `main_LLM_hetrank.py` | `HetLoRA`, `RoLoRA`, `LA-LoRA`, `FedSA`, `FlexLoRA`, `FSLoRA` |
-| `main_LLM_hetrank_stack.py` | `FFA`, `FLoRA`, `Frank-LoRA` |
+| `main_LLM_hetrank_stack.py` | `FFA`, `FLoRA`, `SPRA-LoRA` |
 
 - **HetLoRA** averages zero-padded client *deltas* (changes since the
   round started). Rows a client did not train stay as they were.
@@ -17,7 +17,7 @@ data is split non-IID with a Dirichlet distribution.
 - **LA-LoRA** is HetLoRA, but switches between B and A at every local step.
 - **FedSA** shares A across clients. Each client keeps its own B. Its
   accuracy is the mean over that round's clients of (server A + own B).
-- **Frank-LoRA** with `--lr map` uses a learning rate per rank (`RANK_LR_MAP`).
+- **SPRA-LoRA** with `--lr map` uses a learning rate per rank (`RANK_LR_MAP`).
 
 Tasks (`--data_name`): `sst2`, `cola`, `RTE`, `MRPC`, `qnli`, `MNLI`, `QQP`.
 
@@ -84,7 +84,7 @@ Method names, colors and display order for all plots are in
 
 ```
 main_LLM_hetrank.py        HetLoRA-family, FlexLoRA, FSLoRA
-main_LLM_hetrank_stack.py  FFA, FLoRA, Frank-LoRA; --baseline_eval
+main_LLM_hetrank_stack.py  FFA, FLoRA, SPRA-LoRA; --baseline_eval
 dirichlet_data.py          non-IID client split
 plot_scripts/              accuracy curves, bar charts, result tables (summarize.py)
 ```
