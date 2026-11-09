@@ -26,8 +26,8 @@ Tasks (`--data_name`): `sst2`, `cola`, `RTE`, `MRPC`, `qnli`, `MNLI`, `QQP`.
 Python 3.10, CUDA 12.1.
 
 ```bash
-conda create -n la_lora python=3.10 -y
-conda activate la_lora
+conda create -n glue_lora python=3.10 -y
+conda activate glue_lora
 pip install -r requirements.txt
 ```
 
