@@ -25,3 +25,22 @@ SPRA-LoRA is a parameter-efficient federated fine-tuning framework for Large Lan
 ├── Commonsense_requirements.text      # Required Python packages for the Common Sense implementation
 ├── GLUE_requirements.text             # Required Python packages for the GLUE implementation
 └── README.md                          # Repository documentation
+
+
+### Subdirectory Explanations
+* **[GLUE](GLUE/)**: The implementation codes for the GLUE benchmark are located in the GLUE subfolder.
+* **[Common Sense](Common-Sense/)**: The implementation codes for the CommonsenseQA dataset are located in the Common Sense subfolder.
+
+
+## 📚 Citation
+We built this repository by extending the repositories of the **[FSLoRA](https://arxiv.org/pdf/2501.19389v4)** and **[LA-LoRA](https://arxiv.org/pdf/2602.19926)** papers. If you find this work or repository useful in your research, please cite our paper:
+
+```bibtex
+@inproceedings{
+spralora,
+title={Stochastic Projections and Rank-Aware Learning Rates for Federated LoRA},
+author={Saber Malekmohammadi and Kevin Kuo and Virginia Smith and Golnoosh Farnadi},
+booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
+year={2026},
+url={[https://openreview.net/forum?id=uPdmJxDBM2](https://openreview.net/forum?id=uPdmJxDBM2)}
+}
