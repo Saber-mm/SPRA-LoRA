@@ -1,4 +1,4 @@
-# LA-LORA: federated LoRA with heterogeneous client ranks
+# SPRA-LoRA with heterogeneous client ranks on GLUE benchmark
 
 Federated fine-tuning of RoBERTa-base with LoRA on GLUE, where clients use
 different LoRA ranks (default `4,8,16,32,64,128`, assigned round-robin) and
@@ -41,8 +41,6 @@ export HF_HOME=/path/to/cache/huggingface
 ```
 
 ## Run one job
-
-From `LA-LORA/`:
 
 ```bash
 python main_LLM_hetrank.py --alg HetLoRA --data_name RTE \
