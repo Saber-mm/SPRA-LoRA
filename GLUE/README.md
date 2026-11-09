@@ -1,6 +1,6 @@
-# SPRA-LoRA with heterogeneous client ranks on GLUE benchmark
+# SPRA-LoRA and baseline algorithms with heterogeneous client ranks on GLUE benchmark
 
-Federated fine-tuning of RoBERTa-base with LoRA on GLUE, where clients use
+Federated fine-tuning of RoBERTa-base with LoRA family algorithms on GLUE, where clients use
 different LoRA ranks (default `4,8,16,32,64,128`, assigned round-robin) and
 data is split non-IID with a Dirichlet distribution.
 
