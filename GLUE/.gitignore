@@ -1,0 +1,15 @@
+plot
+dataset
+data
+log
+runs
+model
+slurm_logs
+plots
+checkpoint
+__pycache__/
+*.pyc
+*.pth
+*.png
+test_gpu_result*.txt
+slurm_scripts
