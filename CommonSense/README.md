@@ -53,7 +53,7 @@ Each run saves the final model checkpoints in repository under a `./model_parame
 
 ## Evaluation
 
-For evaluating a model fine-tuned using an algorithm, copy the saved model path from `./model_parameters_set/` into `saved_model_path` (line 92) of `evaluation_vllm.py` and run the python file.
+For evaluating a model fine-tuned using an algorithm, copy the path of the model saved in `./model_parameters_set/` into `saved_model_path` (line 92) of `evaluation_vllm.py` and run the python file.
 
 ## Plots
 
