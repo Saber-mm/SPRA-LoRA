@@ -40,5 +40,5 @@ title={Stochastic Projections and Rank-Aware Learning Rates for Federated LoRA},
 author={Saber Malekmohammadi and Kevin Kuo and Virginia Smith and Golnoosh Farnadi},
 booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
 year={2026},
-url={[https://openreview.net/forum?id=uPdmJxDBM2](https://openreview.net/forum?id=uPdmJxDBM2)}
+url={https://openreview.net/forum?id=uPdmJxDBM2#discussion}
 }
