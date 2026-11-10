@@ -25,7 +25,7 @@ data is split non-IID with a Dirichlet distribution.
 - **FFA** (with extended aggregation strategy) stacks clients LoRA components (frozen *A* matrices) to aggregated client *deltas* in the adapter.
 - **SPRA-LoRA** resamples and freezes LoRA *A* matrices, with `--lr map` uses a learning rate per rank (`RANK_LR_MAP`).
 
-Tasks (`--data_name`): `sst2`, `cola`, `RTE`, `MRPC`, `qnli`, `MNLI`, `QQP`.
+Tasks: `BoolQ`, `WinoGrande`, `OBQA`, `ARC-e`, `ARC-c`, `SIQA`, `PIQA`, `HellaSwag`
 
 ## Setup
 
