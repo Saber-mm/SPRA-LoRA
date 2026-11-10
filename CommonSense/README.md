@@ -25,7 +25,6 @@ data is split non-IID with a Dirichlet distribution.
 - **FFA** (with extended aggregation strategy) stacks clients LoRA components (frozen *A* matrices) to aggregated client *deltas* in the adapter.
 - **SPRA-LoRA** resamples and freezes LoRA *A* matrices, with `--lr map` uses a learning rate per rank (`RANK_LR_MAP`).
 
-Tasks: `BoolQ`, `WinoGrande`, `OBQA`, `ARC-e`, `ARC-c`, `SIQA`, `PIQA`, `HellaSwag`
 
 ## Setup
 
@@ -37,7 +36,11 @@ conda activate commonsense_lora
 pip install -r SPRA-LoRA/CommonSense_requirements.txt
 ```
 
-For the commonsense reasoning benchmark, data is downloaded from **[Commonsense Reasoning Benchmark Dataset](https://github.com/AGI-Edgerunners/LLM-Adapters/tree/main/dataset)**. LLaMA-3.2-3B weights download from HuggingFace on first use into the repository directory.
+For the commonsense reasoning benchmark, data is downloaded from **[Commonsense Reasoning Benchmark Dataset](https://github.com/AGI-Edgerunners/LLM-Adapters/tree/main/dataset)**:
+
+Tasks: `BoolQ`, `WinoGrande`, `OBQA`, `ARC-e`, `ARC-c`, `SIQA`, `PIQA`, `HellaSwag`
+
+LLaMA-3.2-3B weights download from HuggingFace on first use into the repository directory.
 
 ## Run one job
 The following are two examples for running experiments with HetLoRA and SPRA-LoRA:
