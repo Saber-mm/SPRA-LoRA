@@ -21,7 +21,7 @@ data is split non-IID with a Dirichlet distribution.
 - **FedSA** shares A across clients. Each client keeps its own B. Its
   accuracy is the mean over that round's clients of (server A + own B).
 - **FSLoRA** uses a fixed global rank with sketching on clients side to update LoRA submatrices.
-- **FLoRA** stacks clients LoRA components to aggregated client *deltas* in the adapter.
+- **FLoRA** stacks clients LoRA components to aggregated client *deltas* of the adapter parameter.
 - **FFA** (with extended aggregation strategy) stacks clients LoRA components (frozen *A* matrices) to aggregated client *deltas* in the adapter.
 - **SPRA-LoRA** resamples and freezes LoRA *A* matrices, with `--lr map` uses a learning rate per rank (`RANK_LR_MAP`).
 
@@ -50,6 +50,10 @@ python main_Stacked.py --algorithm=SPRA-LoRA --dataset_seed=0
 Important parameters are set in the arg.py file (or could be set when running jobs).
 
 Each run saves the final model checkpoints in repository under a `./model_parameters_set/` directory.
+
+## Evaluation
+
+For evaluating a model fine-tuned using an algorithm, copy the saved model path from `./model_parameters_set/` into `saved_model_path` (line 92) of `evaluation_vllm.py` and run the python file.
 
 ## Plots
 
